@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop all fragrances — Naya's Essence</title>
+<meta name="description" content="Shop authentic perfumes and perfume oils from Lattafa, Maison Alhambra, Gulf Orchid and more. Order on WhatsApp.">
+<link rel="icon" href="assets/img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="shop">
+<div id="site-header"></div>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span id="crumbNow">Shop</span></nav>
+      <h1 id="shopTitle">All fragrances</h1>
+      <p id="shopSub">Every bottle, hand-picked. Filter by mood, brand or who it's for.</p>
+    </div>
+  </section>
+
+  <section class="collection">
+    <div class="wrap col-in">
+      <aside class="filters" id="filters" aria-label="Filters">
+        <div class="filters-head"><h3>Filter</h3><button class="icon-btn" id="closeFilters" aria-label="Close filters"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+        <div class="fgroup"><h4>Category</h4><div id="fType"></div></div>
+        <div class="fgroup"><h4>Mood</h4><div id="fMood"></div></div>
+        <div class="fgroup"><h4>Brand</h4><div id="fBrand"></div></div>
+        <div class="fgroup"><h4>Made for</h4><div id="fFor"></div></div>
+        <div class="fgroup">
+          <h4>Max price</h4>
+          <input type="range" id="fPrice" min="5000" max="30000" step="1000" value="30000">
+          <div class="range-val"><span>₦5,000</span><b id="fPriceVal">₦30,000</b></div>
+        </div>
+        <button class="btn ghost full" id="clearAll">Clear all</button>
+        <button class="btn full show-results" id="showResults">Show results</button>
+      </aside>
+
+      <div class="col-main">
+        <div class="col-bar">
+          <button class="btn ghost sm filter-toggle" id="openFilters"><svg viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filters</button>
+          <span class="count-txt" id="resultCount"></span>
+          <select id="sort" aria-label="Sort products">
+            <option value="featured">Featured</option>
+            <option value="low">Price: low to high</option>
+            <option value="high">Price: high to low</option>
+            <option value="az">Name: A–Z</option>
+          </select>
+        </div>
+        <div class="active-pills" id="activePills"></div>
+        <div class="grid col-grid" id="grid"></div>
+        <div class="empty" id="empty" hidden>
+          <p>No scents match those filters.</p>
+          <button class="btn ghost sm" id="emptyClear">Clear filters</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="help-band">
+    <div class="wrap help-in">
+      <div><h2>Can't decide?</h2><p>Tell us what you like and we'll recommend something personally.</p></div>
+      <div class="help-cta"><a href="index.html#finder" class="btn ghost light">Take the scent quiz</a><a href="https://wa.me/2349021814016" target="_blank" rel="noopener" class="btn gold">Chat on WhatsApp</a></div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="data.js"></script>
+<script src="common.js"></script>
+<script src="shop.js"></script>
+</body>
+</html>
