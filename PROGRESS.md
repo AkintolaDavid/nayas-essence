@@ -21,3 +21,7 @@ Images pulled from IG @nayas_essence (low-res ~480px) → assets/img. raw/ = ori
 - Added collection page, product pages, floating 'Join the list' subscribe button (bottom-left) + popup.
 - Subscribe forms don't send anywhere yet — hook to Mailchimp/Google Sheet.
 - Products can take `images: [..]` for a gallery once Naya sends more photos.
+
+## Hosting
+- Live: https://akintoladavid.github.io/nayas-essence/ (GitHub Pages, repo AkintolaDavid/nayas-essence, branch main)
+- To update: commit + `git push` — Pages rebuilds in ~1 min.
